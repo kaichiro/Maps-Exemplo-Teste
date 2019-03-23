@@ -199,8 +199,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="U3H-ug-1eM">
-                                <rect key="frame" x="16" y="20" width="288" height="379"/>
+                                <rect key="frame" x="16" y="20" width="288" height="321"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="4eQ-Re-ihr" appends="YES" id="p4D-04-vsq"/>
+                                </connections>
                             </mapView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fwh-1N-eMx">
                                 <rect key="frame" x="16" y="407" width="288" height="29"/>
@@ -210,15 +214,34 @@
                                     <segment title="Satelite"/>
                                     <segment title="Hibrido"/>
                                 </segments>
+                                <connections>
+                                    <action selector="trataEventoSegmented:" destination="PhL-Rw-whA" eventType="valueChanged" id="2fJ-ya-dVr"/>
+                                </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hT9-12-DHT" userLabel="btnMakeCall">
+                                <rect key="frame" x="16" y="358" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Chamar"/>
+                                <connections>
+                                    <action selector="handleCall:" destination="PhL-Rw-whA" eventType="touchUpInside" id="7zi-df-wPz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0HS-BX-arA"/>
                     </view>
+                    <connections>
+                        <outlet property="vrMap" destination="U3H-ug-1eM" id="WZ7-Ak-zdE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iUN-87-cPW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="4eQ-Re-ihr">
+                    <connections>
+                        <outlet property="delegate" destination="PhL-Rw-whA" id="IsQ-U2-CSr"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1391.25" y="115"/>
+            <point key="canvasLocation" x="1561.875" y="117.5"/>
         </scene>
     </scenes>
 </document>
