@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5713D68C224669AA0019D84C /* VCTerceira.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5713D68B224669AA0019D84C /* VCTerceira.swift */; };
 		57B9F9AF2245B65200AC7902 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B9F9AE2245B65200AC7902 /* AppDelegate.swift */; };
 		57B9F9B12245B65200AC7902 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B9F9B02245B65200AC7902 /* ViewController.swift */; };
 		57B9F9B42245B65200AC7902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B9F9B22245B65200AC7902 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5713D68B224669AA0019D84C /* VCTerceira.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTerceira.swift; sourceTree = "<group>"; };
 		57B9F9AB2245B65200AC7902 /* MyPhomeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPhomeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B9F9AE2245B65200AC7902 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57B9F9B02245B65200AC7902 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				57B9F9AE2245B65200AC7902 /* AppDelegate.swift */,
 				57B9F9B02245B65200AC7902 /* ViewController.swift */,
+				5713D68B224669AA0019D84C /* VCTerceira.swift */,
 				57B9F9B22245B65200AC7902 /* Main.storyboard */,
 				57B9F9B52245B65200AC7902 /* Assets.xcassets */,
 				57B9F9B72245B65200AC7902 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				57B9F9B12245B65200AC7902 /* ViewController.swift in Sources */,
 				57B9F9AF2245B65200AC7902 /* AppDelegate.swift in Sources */,
+				5713D68C224669AA0019D84C /* VCTerceira.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
